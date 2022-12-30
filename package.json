@@ -1,0 +1,18 @@
+{
+  "name": "ToDoList",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "1.10.2",
+    "vue": "3.2.45"
+  },
+  "devDependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@vue/compiler-sfc": "^3.0.4",
+    "element-plus": "^2.2.27",
+    "vite": "3.2.4"
+  }
+}
