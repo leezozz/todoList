@@ -131,19 +131,6 @@ export default {
 
   const todoList = useStroage()
 
-  // const todoList = ref([
-  //   {
-  //     label: '123',
-  //     isChecked: true
-  //   },
-  //   {
-  //     label: 'todoList',
-  //     isChecked: false
-  //   },
-  // ])
-  // todoList.value.reverse()
-  // console.log('todoList.value', todoList.value)
-
   // 全选事件
   const handleCheckAllChange = (val) => {
     todoList.value.map((item) => {
@@ -226,15 +213,12 @@ export default {
     const filterList = computed(()=> filter[type.value](todos.value))
     console.log('filterList---', filterList.value)
 
-    // if(!todos.length) return 
-
     // 已选中的条数
     const doneCount = computed(()=> filter.active(todos.value).length)
 
     const hashChange = () => {
       console.log('hashchange事件', todos.value)
       hashVal.value = window.location.hash.replace('#/', '')
-      console.log('hashVal', hashVal.value)
 
       if(filter[hashVal.value]) {
         type.value = hashVal.value
