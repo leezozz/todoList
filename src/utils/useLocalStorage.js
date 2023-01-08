@@ -32,7 +32,6 @@ export default function useLocalStorage() {
     } else {
       value = null
     }
-    // console.log('啊啊啊value', value)
     return value
   }
 
